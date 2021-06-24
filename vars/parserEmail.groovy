@@ -13,4 +13,3 @@ def email_error(){
                         to: '$DEFAULT_RECIPIENTS'
                 }
             }
-		}
