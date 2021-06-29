@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 package com.cleverbuilder
 
-class EmailNotification {
+class Emails {
   static def consoleParser() {
                     logParser parsingRulesPath: '/var/lib/jenkins/log_rules/config', projectRulePath: '', useProjectRule: false
                     // Send an email only if the build has failed
