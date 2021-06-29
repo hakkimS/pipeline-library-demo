@@ -3,6 +3,6 @@ package com.cleverbuilder
 
 class Emails {
   static def consoleParser() {
-                    println("parsing console")
+                    println "parsing console"
             }
 }
