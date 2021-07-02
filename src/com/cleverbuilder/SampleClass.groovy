@@ -2,7 +2,7 @@
 package com.cleverbuilder
 
 class SampleClass {
-   def call(){
+   def numberSequence(){
      def temp = libraryResource 'org/sample.sh'
      writeFile file:"test.sh",text:temp
      sh 'chmod +x test.sh'
