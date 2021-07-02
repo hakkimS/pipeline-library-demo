@@ -2,10 +2,17 @@
 package com.cleverbuilder
 
 class SampleClass {
-   String name
-   Integer age
+   def call(){
+     def temp = libraryResource 'org/sample.sh'
+     writeFile file:"test.sh",text:temp
+     sh 'chmod +x test.sh'
+     def int count = sh './test.sh'
+  if (!Primes.isPrime(count)) {
+    error "${count} was not prime"
+  } else {
+    echo "${count} is a prime"
+  }
+}
 
-   def increaseAge(Integer years) {
-      this.age += years
    }
 }
