@@ -2,7 +2,7 @@
 package com.cleverbuilder
 class SampleClass {
    def printing(int x) {
-      echo '${x} is prime number'
+      echo "${x} is prime number"
 }
 
    }
