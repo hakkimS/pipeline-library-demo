@@ -3,6 +3,9 @@ package com.cleverbuilder
 
 class Emails {
   static def consoleParser() {
-                    println "parsing console"
+                    for(int no in seqno) {
+                             if (!Primes.isPrime(no)) {
+                             echo "${no} was not prime"
+                    }
             }
 }
