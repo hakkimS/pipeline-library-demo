@@ -1,8 +1,8 @@
 #!/usr/bin/env groovy
 package com.cleverbuilder
 class SampleClass {
-   def print() {
-     echo 'prime number'
+   def print(int x) {
+      echo '${x} is prime number'
 }
 
    }
